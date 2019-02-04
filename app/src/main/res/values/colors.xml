@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#73ccff</color>
+    <color name="colorPrimaryDark">#4ebbfa</color>
+    <color name="colorAccent">#7399f9</color>
+
+    <color name="background_color">#37adf1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white_greyish">#cacaca</color>
+    <color name="button_selectorcolor">#f3f7f9</color>
+
+    <color name="abuabu">#d9d8d8</color>
+
+
+    <!-- 1st Gradient color -->
+    <color name="colorPurple_A400">#1b5e20</color>
+    <color name="colorPurple_900">#6abf69</color>
+    <!-- ./ 1st Gradient color -->
+
+    <!-- 2nd Gradient color -->
+    <color name="colorAmber_A400">#9ccc65</color>
+    <color name="colorAmber_900">#255d00</color>
+    <!-- ./ 2nd Gradient color -->
+
+    <!-- 3rd Gradient color -->
+    <color name="colorGreen_A400">#5efc82</color>
+    <color name="colorGreen_900">#1faa00</color>
+    <!-- ./ 3rd Gradient color -->
+
+    <!-- 4th Gradient color -->
+    <color name="colorRed_A400">#8bc34a</color>
+    <color name="colorRed_900">#a8b545</color>
+    <!-- ./ 4th Gradient color -->
+
+    <color name="button_delete">#f20404</color>
+    <color name="button_save">#015eff</color>
+
+    <color name="background_color_login">#3d84ff</color>
+    <color name="white_transparent_twenty">#33FFFFFF</color>
+</resources>

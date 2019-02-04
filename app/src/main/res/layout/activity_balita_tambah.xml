@@ -1,0 +1,256 @@
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<LinearLayout-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:elevation="5dp">-->
+            <!--<android.support.design.widget.AppBarLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:layout_scrollFlags="scroll|enterAlways|snap"-->
+                <!--android:clipToPadding="false">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:focusable="true"-->
+                    <!--android:focusableInTouchMode="true">-->
+                    <!--<SearchView-->
+                        <!--android:id="@+id/svCari"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:queryHint="Cari..."-->
+                        <!--android:background="@drawable/rounded_bg_white"-->
+                        <!--android:elevation="3dp"-->
+                        <!--android:searchIcon="@drawable/search"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--android:iconifiedByDefault="false">-->
+                    <!--</SearchView>-->
+                <!--</LinearLayout>-->
+
+            <!--</android.support.design.widget.AppBarLayout>-->
+        <!--</LinearLayout>-->
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/background_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="INPUT BALITA"
+                        android:textColor="@color/white_greyish"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <View
+                        android:layout_marginTop="2dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="4px"
+                        android:background="@color/white_greyish" />
+
+                    <EditText
+                        android:maxLength="50"
+                        android:id="@+id/txtNama_balita"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton_selector"
+                        android:drawableLeft="@drawable/ic_assignment"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="Nama Balita"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/background_color"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="4px"
+                        android:background="@color/white_greyish" />
+
+                    <EditText
+                        android:maxLength="50"
+                        android:id="@+id/txttempat_lahir"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton_selector"
+                        android:drawableLeft="@drawable/ic_assignment"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="Tempat Lahir"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/background_color"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="4px"
+                        android:background="@color/white_greyish" />
+
+                    <EditText
+                        android:maxLength="50"
+                        android:id="@+id/txtTgl_lahir"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/loginbutton_selector"
+                        android:drawableLeft="@drawable/ic_assignment"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:hint="Tanggal Lahir"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/background_color"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="4px"
+                        android:background="@color/white_greyish" />
+
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="Jenis Kelamin :"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <RadioGroup
+                        android:id="@+id/rGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:textColor="@color/white"
+                            android:onClick="onRadioButtonClicked"
+                            android:id="@+id/rdlaki"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Laki-laki"
+                            android:textSize="16sp"/>
+                        <RadioButton
+                            android:textColor="@color/white"
+                            android:onClick="onRadioButtonClicked"
+                            android:id="@+id/rdperempuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Perempuan"
+                            android:textSize="16sp"/>
+                    </RadioGroup>
+
+                    <View
+                        android:layout_marginTop="5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="4px"
+                        android:background="@color/white_greyish" />
+
+
+                    <Button
+                        android:id="@+id/btnSimpan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/loginbutton_selector"
+                        android:padding="3dp"
+                        android:text="TAMBAH"
+                        android:textColor="@color/background_color"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:onClick="simpan"/>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main_barang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            />
+    </LinearLayout>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="tambah"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:src="@drawable/ic_add_circle_black_24dp"-->
+        <!--/>-->
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:backgroundTint="@color/colorPrimaryDark"-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="16dp"-->
+        <!--app:srcCompat="@drawable/ic_add_circle_black_24dp"-->
+        <!--tools:ignore="VectorDrawableCompat"-->
+        <!--android:onClick="tambah"/>-->
+
+</FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
