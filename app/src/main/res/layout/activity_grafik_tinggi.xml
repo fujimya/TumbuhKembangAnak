@@ -4,12 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.fujimiya.tumbuhkembanganak.GrafikBerat">
+    tools:context="com.example.fujimiya.tumbuhkembanganak.GrafikTinggi">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <Button
+            android:onClick="print"
+            android:text="CETAK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <WebView
             android:id="@+id/wevView"
             android:layout_width="match_parent"
